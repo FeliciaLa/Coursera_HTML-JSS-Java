@@ -40,10 +40,14 @@ h1 {
 
 /* Desktop View (992px and above) */
 @media (min-width: 992px) {
-  .section {
-    float: left;
-    width: 32%;
-  }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+        gap: 20px; /* Optional: Space between each box */
+    }
+    .section {
+        box-sizing: border-box; /* Prevents padding from affecting the width */
+    }
 }
 
 /* Tablet View (768px - 991px) */

@@ -1,0 +1,67 @@
+/* General reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.75em;
+}
+
+/* Section styles */
+.section {
+  border: 1px solid black;
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin: 10px;
+  position: relative;
+}
+
+.section-title {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffa07a;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 1.25em;
+}
+
+/* Desktop View (992px and above) */
+@media (min-width: 992px) {
+  .section {
+    float: left;
+    width: 32%;
+  }
+}
+
+/* Tablet View (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  #chicken, #beef {
+    float: left;
+    width: 48%;
+  }
+  #sushi {
+    clear: both;
+    width: 100%;
+  }
+}
+
+/* Mobile View (767px and below) */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    float: none;
+  }
+}

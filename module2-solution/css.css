@@ -41,7 +41,7 @@ h1 {
 /* Desktop View (992px and above) */
 @media (min-width: 992px) {
   .section {
-    width: 32%; /* Each section takes up approximately one-third of the screen width */
+    width: 30%; /* Each section takes up approximately one-third of the screen width */
     float: left; /* Allow the sections to float next to each other */
     margin-right: 1%; /* Add spacing between sections */
   }

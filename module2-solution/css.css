@@ -40,14 +40,16 @@ h1 {
 
 /* Desktop View (992px and above) */
 @media (min-width: 992px) {
-    .container {
-        display: grid;                          /* Set container to grid layout */
-        grid-template-columns: repeat(3, 1fr);  /* Create 3 equal-width columns */
-        gap: 20px;                              /* Optional spacing between columns */
-    }
-    .section {
-        box-sizing: border-box;                 /* Ensure consistent sizing */
-    }
+  .section {
+    width: 32%; /* Each section takes up approximately one-third of the screen width */
+    float: left; /* Allow the sections to float next to each other */
+    margin-right: 1%; /* Add spacing between sections */
+  }
+  
+  /* Ensure no extra margin on the last section */
+  .section:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 /* Tablet View (768px - 991px) */

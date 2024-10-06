@@ -1,3 +1,4 @@
+CSS
 /* General reset */
 * {
     box-sizing: border-box;
@@ -41,7 +42,7 @@ h1 {
 /* Desktop View (992px and above) */
 @media (min-width: 992px) {
     .section {
-        width: 33.33%; /* Equal width for each section */
+        width: 33.33%;
         float: left;
         margin-right: 1%;
     }
@@ -53,6 +54,11 @@ h1 {
 
 /* Tablet View (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 100%;
+        clear: both;
+    }
+
     #chicken, #beef {
         float: left;
         width: 48%;
@@ -60,7 +66,6 @@ h1 {
 
     #sushi {
         clear: both;
-        width: 100%;
     }
 }
 

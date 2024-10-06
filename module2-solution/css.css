@@ -1,73 +1,73 @@
 /* General reset */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Basic styling for body */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
 }
 
 /* Heading styles */
 h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.75em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.75em;
 }
 
 /* Section styles */
 .section {
-  border: 1px solid black;
-  padding: 20px;
-  background-color: #f0f0f0;
-  margin: 10px;
-  position: relative;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    position: relative;
 }
 
 .section-title {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #ffa07a;
-  padding: 5px 10px;
-  border: 1px solid black;
-  font-size: 1.25em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffa07a;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-size: 1.25em;
 }
 
 /* Desktop View (992px and above) */
 @media (min-width: 992px) {
-  .section {
-    width: 30%; /* Each section takes up approximately one-third of the screen width */
-    float: left; /* Allow the sections to float next to each other */
-    margin-right: 1%; /* Add spacing between sections */
-  }
-  
-  /* Ensure no extra margin on the last section */
-  .section:nth-child(3n) {
-    margin-right: 0;
-  }
+    .section {
+        width: 33.33%; /* Equal width for each section */
+        float: left;
+        margin-right: 1%;
+    }
+
+    .section:nth-child(3n) {
+        margin-right: 0;
+    }
 }
 
 /* Tablet View (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
-  #chicken, #beef {
-    float: left;
-    width: 48%;
-  }
-  #sushi {
-    clear: both;
-    width: 100%;
-  }
+    #chicken, #beef {
+        float: left;
+        width: 48%;
+    }
+
+    #sushi {
+        clear: both;
+        width: 100%;
+    }
 }
 
 /* Mobile View (767px and below) */
 @media (max-width: 767px) {
-  .section {
-    width: 100%;
-    float: none;
-  }
+    .section {
+        width: 100%;
+        float: none;
+    }
 }

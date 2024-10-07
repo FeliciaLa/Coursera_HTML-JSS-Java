@@ -42,13 +42,13 @@ h1 {
 /* Desktop View (992px and above) */
 @media (min-width: 992px) {
     .section {
-        width: 32%;  /* Each section takes roughly 1/3 of the container width */
+        width: 32%; /* Each section takes roughly 1/3 of the container width */
         float: left;
         margin: 1%;
     }
 
     /* Remove right margin for the last section to align properly */
-    .section:nth-child(3n) {
+    .section:last-child {
         margin-right: 0;
     }
 }
@@ -62,7 +62,7 @@ h1 {
     }
 
     /* The last section takes the full width and goes below the first two sections */
-    .section:nth-child(3) {
+    .section:last-child {
         width: 100%;
         clear: both;
         margin-top: 10px;

@@ -42,7 +42,7 @@ h1 {
 /* Desktop View (992px and above) */
 @media (min-width: 992px) {
     .section {
-        width: 32%; /* Each section takes roughly 1/3 of the container width */
+        width: 31%; /* Each section takes roughly 1/3 of the container width */
         float: left;
         margin: 1%;
     }

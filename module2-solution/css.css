@@ -47,12 +47,6 @@ h1 {
         margin: 1%;
     }
 
-    /* Remove right margin for the last section to align properly */
-    .section:last-child {
-        margin-right: 0;
-    }
-}
-
 /* Tablet View (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
     .section {

@@ -71,3 +71,17 @@ h1 {
         margin-bottom: 10px; /* Add some space between each section */
     }
 }
+
+
+/* background colors */
+#chicken .section-title {
+    background-color: #ffcc00; /* Yellow */
+}
+
+#beef .section-title {
+    background-color: #90ee90; /* Light green */
+}
+
+#sushi .section-title {
+    background-color: #ffb6c1; /* Light pink */
+}
